@@ -94,6 +94,7 @@ body {
 }
 
 .menu {
+    justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -102,10 +103,10 @@ body {
 
 }
 
-.menu-content {
+.menu-links {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .menu a {
@@ -274,21 +275,21 @@ footer {
 
     @keyframes saidaText {
         0% {
-            transform: scale(100%);
+            transform: translateY(0);
         }
 
         100% {
-            transform: scale(0);
+            transform: translateY(-100%);
         }
     }
 
     @keyframes entradaText {
         0% {
-            transform: scale(0);
+            transform: translateY(-100%);
         }
 
         100% {
-            transform: scale(100%);
+            transform: translateY(0);
         }
     }
 
@@ -323,11 +324,28 @@ footer {
         position: fixed;
         right: 5rem;
         top: 5rem;
-        padding: 1rem;
+        border-radius: 10rem;
+        padding: 1rem 1.5rem;
+        font-size: 2rem;
+        font-weight: bold;
         background-color: #fff;
         border: none;
         color: var(--primeira);
         border-radius: 0.5rem;
+        cursor: pointer;
+    }
+
+    .close-menu:hover {
+        transition: var(--transition);
+        transform: translateY(-0.5rem);
+        box-shadow: 5px 5px 4px #000;
+
+    }
+
+    .menu {
+        display: none;
+        justify-content: center;
+        align-items: center;
     }
 
     .menu ul {

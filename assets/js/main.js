@@ -6,7 +6,7 @@ function menuMobile() {
     btnMenu.addEventListener('click', () => {
 
         if (click % 2 === 0) {
-            menu.style.display = 'block';
+            menu.style.display = 'flex';
             menu.classList.add('entradaMenu');
             menuTxt.classList.add('entradaTxt');
             menu.classList.remove('saidaMenu');
