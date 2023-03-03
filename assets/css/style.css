@@ -145,7 +145,7 @@ body {
 
 .menu-spacing {
     width: 100%;
-    height: 133px;
+    height: 120px;
 }
 
 .section {
@@ -211,6 +211,19 @@ footer {
     justify-content: space-between;
     padding: 0 var(--padding);
     padding-top: 6rem;
+    position: relative;
+}
+
+.rodape::after {
+
+    content: '';
+    width: 100%;
+    margin: 0 auto;
+    height: 1px;
+    position: absolute;
+    background-color: var(--quinta);
+    top: 3rem;
+    left: 0;
 
 }
 
