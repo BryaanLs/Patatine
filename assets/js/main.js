@@ -37,16 +37,11 @@ function carrossel() {
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        centerMode: true
+        centerMode: true,
+        variableWidth: true
         // autoplay: true,
         // autoplaySpeed: 2000
     });
-
-    // $('.slider').slick({
-    //     lazyLoad: 'ondemand',
-    //     slidesToShow: 3,
-    //     slidesToScroll: 1
-    // });
 
 }
 carrossel();
