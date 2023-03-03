@@ -187,6 +187,51 @@ body {
 
 
 
+.carrossel {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.slider {
+    max-width: 80%;
+    height: max-content;
+    padding: 1rem;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 50px;
+
+}
+
+.slide {
+    background-color: var(--quarta);
+    width: max-content;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+
+}
+
+.slide h3,
+.slide p {
+    color: var(--primeira);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

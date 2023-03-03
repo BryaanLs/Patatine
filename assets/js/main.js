@@ -28,3 +28,25 @@ function menuMobile() {
 }
 
 menuMobile();
+
+
+function carrossel() {
+    $(".slider").slick({
+        dots: true,
+        centerMode: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true
+        // autoplay: true,
+        // autoplaySpeed: 2000
+    });
+
+    // $('.slider').slick({
+    //     lazyLoad: 'ondemand',
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1
+    // });
+
+}
+carrossel();
