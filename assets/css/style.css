@@ -82,14 +82,7 @@ body {
     background-color: var(--primeira);
 }
 
-aside {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(180deg, #BF6B04 0%, #F0B604 75.69%, rgba(217, 217, 217, 0) 152.47%);
 
-}
 
 ::-webkit-scrollbar {
     width: 0.5rem;
@@ -101,12 +94,18 @@ aside {
 }
 
 .menu {
-    max-width: 120rem;
-    margin: var(--margin);
-    padding: 0 var(--padding);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, #BF6B04 0%, #F0B604 75.69%, rgba(217, 217, 217, 0) 152.47%);
+
+}
+
+.menu-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .menu a {
@@ -250,6 +249,100 @@ footer {
 
 /* RESPONSIVOS */
 @media (max-width: 1000px) {
+
+    @keyframes entradaMenu {
+        0% {
+            height: 0;
+        }
+
+        100% {
+            height: 100vh;
+            bottom: 0;
+        }
+    }
+
+    @keyframes saidaMenu {
+        0% {
+            height: 100vh;
+        }
+
+        100% {
+            height: 0;
+            bottom: -100%;
+        }
+    }
+
+    @keyframes saidaText {
+        0% {
+            transform: scale(100%);
+        }
+
+        100% {
+            transform: scale(0);
+        }
+    }
+
+    @keyframes entradaText {
+        0% {
+            transform: scale(0);
+        }
+
+        100% {
+            transform: scale(100%);
+        }
+    }
+
+    aside {
+        bottom: 0;
+        height: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+
+    }
+
+    .entradaMenu {
+        animation: entradaMenu 1s ease-in-out both;
+    }
+
+    .entradaTxt {
+        animation: entradaText 1s ease-in-out both;
+    }
+
+    .saidaMenu {
+        animation: saidaMenu 1s ease-in-out both;
+    }
+
+    .saidaTxt {
+        animation: saidaText 1s ease-in-out both;
+    }
+
+    .close-menu {
+        z-index: 1;
+        position: fixed;
+        right: 5rem;
+        top: 5rem;
+        padding: 1rem;
+        background-color: #fff;
+        border: none;
+        color: var(--primeira);
+        border-radius: 0.5rem;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* #logo {
+        position: absolute;
+        top: 10px;
+
+    } */
+
+
+
     .grid {
         grid-template-columns: 1fr;
         padding-top: 5rem;
@@ -293,4 +386,5 @@ footer {
     .rodape-logo {
         transform: scale(80%);
     }
+
 }
