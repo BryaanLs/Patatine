@@ -1,0 +1,164 @@
+:root {
+    /* Cores */
+    --primeira: #172740;
+    --segunda: #F0B604;
+    --terceira: #D98E04;
+    --quarta: #BF6B04;
+    --quinta: #A60303;
+
+    /* Espaçamentos */
+    --padding: 1rem;
+    --gap: 3rem;
+    --margin: 0 auto;
+
+    /* Transição padrão */
+    --transition: all 300ms ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: 'Inter',
+        sans-serif;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4.5rem;
+}
+
+h3 {
+    font-size: 4rem;
+}
+
+h4 {
+    font-size: 3.5rem;
+}
+
+h5 {
+    font-size: 3rem;
+}
+
+h6 {
+    font-size: 2.5rem;
+}
+
+a {
+    font-size: 1.6rem;
+    font-family: 'Jaldi',
+        sans-serif;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.6rem;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    background-color: var(--primeira);
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, #BF6B04 0%, #F0B604 75.69%, rgba(217, 217, 217, 0) 152.47%);
+}
+
+.menu {
+    max-width: 120rem;
+    margin: var(--margin);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu a {
+    display: block;
+    padding: var(--padding) 2rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.menu a:hover {
+    transition: var(--transition);
+    color: var(--segunda);
+    background-color: #fff;
+    border-radius: 0.5rem;
+    transform: translateY(-0.2rem);
+    box-shadow: 0 0 5px var(--quarta);
+}
+
+.menu a::after {
+    content: '';
+    width: 0;
+    position: absolute;
+    left: 50%;
+    bottom: .7rem;
+    background-color: var(--segunda);
+}
+
+.menu a:hover::after {
+    transition: all 500ms ease-in-out;
+    width: 80%;
+    height: .3rem;
+    left: 10%;
+
+}
+
+.menu-spacing {
+    width: 100%;
+    height: 133px;
+}
+
+.section {
+    padding: 1rem;
+}
+
+.main-content {
+    max-width: 120rem;
+    margin: var(--margin);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.text-home h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    width: 80%;
+}
+
+.text-home p {
+    width: 80%;
+    font-size: 2rem;
+
+}
