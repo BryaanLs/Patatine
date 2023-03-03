@@ -173,7 +173,7 @@ body {
     height: auto;
 }
 
-.text-home h1 {
+.text-home h2 {
     font-size: 3rem;
     margin-bottom: 3rem;
     width: 100%;
@@ -388,7 +388,7 @@ body {
         width: 100%;
     }
 
-    footer {
+    .foot {
         height: max-content;
     }
 
