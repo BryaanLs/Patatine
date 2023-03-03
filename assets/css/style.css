@@ -166,6 +166,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
+    margin-bottom: 5rem;
 
 }
 
@@ -182,7 +183,8 @@ body {
 
 .text-home p {
     width: 90%;
-    font-size: 2rem;
+    font-size: 1.7rem;
+    line-height: 1.4;
 }
 
 
@@ -319,6 +321,14 @@ footer {
         animation: saidaText 1s ease-in-out both;
     }
 
+    .menu-spacing {
+        height: 5rem;
+    }
+
+    .text-home {
+        margin-bottom: 3rem;
+    }
+
     .close-menu {
         z-index: 1;
         position: fixed;
@@ -334,6 +344,7 @@ footer {
         border-radius: 0.5rem;
         cursor: pointer;
     }
+
 
     .close-menu:hover {
         transition: var(--transition);
