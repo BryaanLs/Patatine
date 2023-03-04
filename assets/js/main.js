@@ -11,7 +11,7 @@ function menuMobile() {
             menuTxt.classList.add('entradaTxt');
             menu.classList.remove('saidaMenu');
             menuTxt.classList.remove('saidaTxt');
-            btnMenu.innerText = '☓'
+            btnMenu.innerText = '×'
 
 
         }
@@ -30,19 +30,5 @@ function menuMobile() {
 menuMobile();
 
 
-function carrossel() {
-    $(".slider").slick({
-        dots: true,
-        centerMode: true,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        centerMode: true,
-        variableWidth: true
-        // autoplay: true,
-        // autoplaySpeed: 2000
-    });
 
-}
-carrossel();
 
