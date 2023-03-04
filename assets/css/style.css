@@ -445,10 +445,11 @@ body {
     .close-menu {
         z-index: 101;
         position: fixed;
-        right: 5rem;
-        top: 5rem;
+        right: 3rem;
+        top: 3rem;
         border-radius: 10rem;
-        padding: 1rem 1.5rem;
+        width: 4rem;
+        height: 4rem;
         font-size: 2rem;
         font-weight: bold;
         background-color: #fff;
