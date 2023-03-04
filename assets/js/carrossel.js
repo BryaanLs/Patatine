@@ -8,7 +8,7 @@ function carrossel() {
         centerMode: true,
         variableWidth: true,
         autoplay: true,
-        autoplaySpeed: 5000
+        autoplaySpeed: 4000
     });
 
 }
