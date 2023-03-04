@@ -110,7 +110,7 @@ body {
 
 .menu-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -305,17 +305,52 @@ body {
 }
 
 
+/* CALLTOACTION */
+
+.callToAction {
+    padding-bottom: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.callToAction h2,
+.callToAction p {
+    margin-bottom: 1rem;
+}
 
 
 
+.callToAction-content a {
+
+    padding: 1rem var(--padding);
+    background-color: var(--quinta);
+    border-radius: 0.5rem;
+    display: block;
+    animation: callToAction 1.5s infinite alternate;
+    font-size: 2rem;
+}
+
+
+.callToAction-content a:hover {
+    transition: var(--transition);
+    background-color: #D98E04;
+}
 
 
 
+@keyframes callToAction {
+    0% {
+        transform: scale(80%);
+    }
 
+    100% {
 
-
-
-
+        box-shadow: 0 0 15px #000;
+        transform: scale(100%);
+    }
+}
 
 
 
@@ -327,6 +362,13 @@ body {
 
 
 /* RODAPE */
+.fixed-btn {
+    position: fixed;
+    right: 1%;
+    bottom: 1%;
+    z-index: 10;
+}
+
 .foot {
     background-color: #fff;
     height: 25rem;
