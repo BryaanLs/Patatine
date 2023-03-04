@@ -15,16 +15,18 @@
     --transition: all 300ms ease-in-out;
 }
 
+@font-face {
+    font-family: 'open sans';
+    font-display: swap;
+    src: url();
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: #fff;
     scroll-behavior: smooth;
-
-    @font-face {
-        font-family: swap;
-    }
 }
 
 html {
