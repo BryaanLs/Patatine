@@ -21,6 +21,10 @@
     box-sizing: border-box;
     color: #fff;
     scroll-behavior: smooth;
+
+    @font-face {
+        font-family: swap;
+    }
 }
 
 html {
