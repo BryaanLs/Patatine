@@ -91,14 +91,37 @@ body {
 }
 
 .menu {
+
     z-index: 100;
-    justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     background: linear-gradient(180deg, #BF6B04 0%, #F0B604 75.69%, rgba(217, 217, 217, 0) 152.47%);
 
+}
+
+.bgBlue {
+    background: url(/assets/img/liquidBG.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo {
+    padding: 1rem;
+}
+
+#logo img {
+
+    width: 102px;
+    height: auto;
 }
 
 .menu-links {
@@ -143,7 +166,7 @@ body {
 
 .menu-spacing {
     width: 100%;
-    height: 120px;
+    height: 90px;
 }
 
 .section {
@@ -164,7 +187,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
-    margin-bottom: 5rem;
+    padding-bottom: 5rem;
 
 }
 
@@ -205,7 +228,7 @@ body {
 /* CARROSSEL */
 .container {
     text-align: center;
-    margin-bottom: 8rem;
+    padding-bottom: 8rem;
     /* background-color: red; */
 }
 
@@ -408,14 +431,19 @@ body {
         }
     }
 
-    aside {
+    .menu {
         bottom: 0;
         height: 0;
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
         display: none;
 
+    }
+
+    .menu-spacing {
+        display: none;
     }
 
     .entradaMenu {
@@ -432,10 +460,6 @@ body {
 
     .saidaTxt {
         animation: saidaText 1s ease-in-out both;
-    }
-
-    .menu-spacing {
-        height: 5rem;
     }
 
     .text-home {
@@ -471,7 +495,13 @@ body {
         display: none;
         justify-content: center;
         align-items: center;
+
     }
+
+    .menu-content {
+        flex-direction: column;
+    }
+
 
     .menu ul {
         display: flex;
