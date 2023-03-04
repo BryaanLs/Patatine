@@ -15,12 +15,6 @@
     --transition: all 300ms ease-in-out;
 }
 
-@font-face {
-    font-family: 'Inter',
-        sans-serif;
-    font-display: swap;
-    src: url(https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=Jaldi:wght@400;700&display=swap)
-}
 
 * {
     margin: 0;
