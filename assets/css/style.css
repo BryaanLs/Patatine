@@ -27,13 +27,22 @@ html {
     font-size: 62.5%;
 }
 
+@font-face {
+    font-family: 'Jaldi';
+    src: url(/assets/fonts/Jaldi/Jaldi-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(/assets/fonts/Inter/inter.ttf) format('truetype');
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-
     font-family: 'Inter',
         sans-serif;
 }
@@ -81,6 +90,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
 
 @keyframes callToAction {
     0% {
@@ -227,7 +238,7 @@ body {
 
 .text-home p {
     width: 90%;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     line-height: 1.4;
 }
 
