@@ -30,11 +30,13 @@ html {
 @font-face {
     font-family: 'Jaldi';
     src: url(/assets/fonts/Jaldi/Jaldi-Regular.ttf) format('truetype');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Inter';
     src: url(/assets/fonts/Inter/inter.ttf) format('truetype');
+    font-display: swap;
 }
 
 h1,
@@ -393,6 +395,7 @@ body {
     background-color: #d9d9d911;
     backdrop-filter: blur(0.8rem);
     -moz-backdrop-filter: blur(0.8rem);
+    -webkit-backdrop-filter: blur(0.8rem);
     box-shadow: 0 0 3px var(--primeira);
     place-items: center;
     place-content: center;
