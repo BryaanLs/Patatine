@@ -27,7 +27,7 @@ html {
     font-size: 62.5%;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Jaldi';
     src: url(/assets/fonts/Jaldi/Jaldi-Regular.ttf) format('truetype');
     font-display: swap;
@@ -37,7 +37,7 @@ html {
     font-family: 'Inter';
     src: url(/assets/fonts/Inter/inter.ttf) format('truetype');
     font-display: swap;
-}
+} */
 
 
 h1,
