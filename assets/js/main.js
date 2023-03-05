@@ -25,6 +25,7 @@ function menuMobile() {
         }
         click++;
     })
+
 }
 
 menuMobile();

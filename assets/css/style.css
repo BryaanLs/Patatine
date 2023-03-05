@@ -64,8 +64,7 @@ h6 {
 }
 
 a,
-p,
-span {
+p {
     font-size: 1.6rem;
     font-family: 'Jaldi',
         sans-serif;
@@ -79,7 +78,10 @@ li {
 }
 
 body {
-    background-color: var(--primeira);
+    background: url(/assets/img/liquidBG.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 ::-webkit-scrollbar {
@@ -123,12 +125,12 @@ body {
 
 }
 
-.bgBlue {
+/* .bgBlue {
     background: url(/assets/img/liquidBG.svg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 .menu-content {
     display: flex;
@@ -423,6 +425,7 @@ body {
     width: 99.5vw;
     background-color: #d9d9d91f;
     backdrop-filter: blur(0.8rem);
+    -moz-backdrop-filter: blur(0.8rem);
     box-shadow: 0 0 3px var(--primeira);
     place-items: center;
     place-content: center;
@@ -464,6 +467,24 @@ body {
     text-align: center;
 }
 
+.bgMonica {
+    background-image: url(/assets/img/bgMonica-contato.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 80vh;
+    box-shadow: 0 0 10px 5px inset var(--quarta);
+}
+
+.bgText {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.bgText>h2>span {
+    background-color: var(--terceira);
+    padding: 0 1rem;
+}
 
 
 
@@ -694,6 +715,7 @@ body {
     .card:nth-child(2) {
         transform: translateY(0);
     }
+
 
 }
 
