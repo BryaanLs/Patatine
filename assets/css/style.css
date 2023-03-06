@@ -358,6 +358,14 @@ body {
     background-color: #D98E04;
 }
 
+.verProdutos {
+    justify-content: left;
+}
+
+.produtosBtn {
+    width: 80%;
+}
+
 .about>img {
     margin-top: 5rem;
     animation: logoPatatine 5s alternate linear infinite;
@@ -733,6 +741,9 @@ body {
         font-size: 3.5rem;
     }
 
+    .verProdutos {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 800px) {

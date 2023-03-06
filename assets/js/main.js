@@ -50,7 +50,6 @@ function scrollAnimation() {
 }
 
 scrollAnimation()
-
 menuMobile();
 
 
