@@ -561,7 +561,6 @@ body {
 [data-anime] {
     opacity: 0;
     transition: all ease-in-out 400ms;
-    transform: scale(0);
 }
 
 [data-anime="left"] {
@@ -582,11 +581,11 @@ body {
 }
 
 .loadAnimation {
-    animation: load 400ms linear;
+    animation: load 500ms ease-in-out;
 }
 
 .loadOpacity {
-    animation: loadBottom 600ms linear;
+    animation: loadBottom 600ms ease-in-out;
 }
 
 
