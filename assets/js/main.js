@@ -21,12 +21,35 @@ function menuMobile() {
             menuTxt.classList.add('saidaTxt');
             menuTxt.classList.remove('entradaTxt');
             btnMenu.innerText = '☰'
-
         }
         click++;
     })
 
 }
+
+function scrollAnimation() {
+    const target = document.querySelectorAll('[data-anime]');
+    const animationClass = 'animate';
+
+    const windowTop = window.innerHeight * 0.5;
+
+
+
+    window.addEventListener('scroll', (e) => {
+
+        target.forEach((e) => {
+            if (e.getBoundingClientRect().top - windowTop < 120) {
+                e.classList.add(animationClass)
+            } else {
+                e.classList.remove(animationClass)
+            }
+        })
+    })
+
+
+}
+
+scrollAnimation()
 
 menuMobile();
 

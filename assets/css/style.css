@@ -81,8 +81,6 @@ body {
     background-size: cover;
 }
 
-
-
 @keyframes callToAction {
     0% {
         transform: scale(80%);
@@ -107,6 +105,30 @@ body {
 
     100% {
         filter: drop-shadow(0 0 10px var(--segunda));
+    }
+}
+
+@keyframes loadBottom {
+    from {
+        transform: translateY(500px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes load {
+    0% {
+        opacity: 0;
+        transform: scale(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(100%);
     }
 }
 
@@ -534,6 +556,37 @@ body {
 
 .rodape-logo {
     filter: opacity(0.5);
+}
+
+[data-anime] {
+    opacity: 0;
+    transition: all ease-in-out 400ms;
+    transform: scale(0);
+}
+
+[data-anime="left"] {
+    transform: translate3d(-100px, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translateX(50px);
+}
+
+[data-anime="top"] {
+    transform: translate3d(0, 50px, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+.loadAnimation {
+    animation: load 400ms linear;
+}
+
+.loadOpacity {
+    animation: loadBottom 600ms linear;
 }
 
 
