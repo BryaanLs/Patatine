@@ -33,8 +33,6 @@ function scrollAnimation() {
 
     const windowTop = window.innerHeight * 0.5;
 
-
-
     window.addEventListener('scroll', (e) => {
 
         target.forEach((e) => {
