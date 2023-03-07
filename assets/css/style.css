@@ -27,6 +27,8 @@ html {
     font-size: 62.5%;
 }
 
+
+
 h1,
 h2,
 h3,
@@ -198,10 +200,10 @@ body {
     font-size: 2rem;
     text-transform: uppercase;
     position: relative;
+    transition: var(--transition);
 }
 
 .menu a:hover {
-    transition: var(--transition);
     color: var(--segunda);
     background-color: #fff;
     border-radius: 0.5rem;
@@ -595,7 +597,6 @@ body {
 .loadOpacity {
     animation: loadBottom 600ms ease-in-out;
 }
-
 
 @media (max-width: 1000px) {
 
