@@ -481,7 +481,7 @@ body {
 }
 
 .info-treinamento h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     padding-bottom: 2rem;
 
 }
@@ -491,6 +491,19 @@ body {
     padding-bottom: 1rem;
     line-height: 1.3;
     width: 80%;
+}
+
+
+.info-treinamento li {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    line-height: 1.3;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 20px #0000008e;
+    padding: 1rem 0.5rem;
+    background-color: rgba(255, 255, 255, 0.257);
 }
 
 .treinamento {
@@ -744,6 +757,26 @@ body {
 
     .verProdutos {
         justify-content: center;
+    }
+
+    .info-treinamento h2 {
+        width: 100%;
+        font-size: 2.2rem;
+        padding-bottom: 2rem;
+        text-align: left;
+
+    }
+
+    .info-treinamento p {
+
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        line-height: 1.3;
+        width: 100%;
+    }
+
+    .info-treinamento li {
+        font-size: 1.8rem;
     }
 }
 
