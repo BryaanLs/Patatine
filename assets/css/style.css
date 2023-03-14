@@ -778,6 +778,10 @@ body {
     .info-treinamento li {
         font-size: 1.8rem;
     }
+
+    .contact h2 {
+        font-size: 3rem;
+    }
 }
 
 @media (max-width: 800px) {
